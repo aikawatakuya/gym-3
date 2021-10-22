@@ -81,232 +81,58 @@
   }
 }
 
-// * * * * ** * * 特徴 * * * * * * *
-.c-about,
-.c-method {
-  .c-features {
-    .c-container {
-      display: flex;
-      justify-content: space-between;
-    }
-
-    .c-title {
-      width: 30%;
-    }
-
-    &__desc {
-      width: 65%;
-    }
-  }
-
-  .c-points {
-    & li {
-      display: flex;
-      justify-content: space-between;
-
-      &:nth-child(2n) {
-        flex-direction: row-reverse;
-      }
-    }
-
-
-    &__img {
-      width: 50%;
-    }
-
-    &__desc {
-      width: 50%;
-    }
+// * * * * * * * * * お知らせ一覧 * * * * * * 
+.news-wrapper {
+  .c-title {
+    margin-bottom: 50px;
   }
 }
 
-// * * * * ** * * トレーナー * * * * * * *
-.c-trainers {
-  .c-staff {
-    &__flex {
-      display: flex;
-      justify-content: space-between;
-    }
-
-    &__img {
-      width: 45%;
-    }
-
-    &__desc {
-      width: 50%;
-    }
-  }
-}
-
-// * * * * * * * * * よくあるご質問* * * * * * 
+// * * * * * * * * * よくあるご質問 * * * * * * 
 .faq-wrapper {
   .faq-contents {
-    & .c-container {
-      padding: 0 7vw;
+    .c-container {
+      padding: 0 20vw;
     }
 
-    & .faq {
-
+    .faq {
       &__title {
-        text-align: center;
+        margin-bottom: 5vw;
       }
 
-      & .c-txt-sm {
-        font-size: 16px;
-      }
+      &__block {
 
-      & .c-txt-md {
-        font-size: 18px;
+        & dt,
+        & dd {
+          & .c-txt-md {
+            font-size: 24px;
+          }
+        }
       }
 
       & dt {
-        &::before {
-          font-size: 28px;
-        }
+        padding: 0 0 2vw 0;
 
-        & span {
+        span {
           &::after {
-            width: 3vw;
+            height: 24px;
           }
         }
       }
 
-      & dd {
-        &::before {
-          font-size: 30px;
+      & .c-title {
+        font-size: 26px;
+      }
+
+      & .c-txtarea01 {
+
+        & .c-txt-sm {
+          font-size: 20px;
         }
       }
-    }
 
-    & .nw-topview {
-      margin: 0 -3vw;
-
-      &__inner {
-        margin: 0 -4vw;
-      }
-    }
-
-    .p-footer {
-      &__wrap {
-        display: flex;
-        justify-content: space-between;
-      }
-
-      & .p-open-time {
-        margin: 0;
-
-        &__wrap {
-          width: 90%;
-        }
-
-        &__table {
-          & th:first-child {
-            width: 9.8vw;
-          }
-        }
-      }
-    }
-  }
-}
-
-//* * * * * * * * * * 採用情報 * * * * * * * * 
-.c-recruit {
-  .c-container {
-    padding: 0 5vw;
-  }
-
-  & ul {
-    display: flex;
-    justify-content: space-between;
-
-    & li {
-      width: 30%;
-      line-height: 1;
-    }
-
-    .points-title {
-      margin-bottom: 25px;
-
-      & .c-txt-lr {
-        line-height: 1.5;
-        font-size: 18px;
-      }
-    }
-
-    .points-desc {
       & .c-txt-sm {
-        font-size: 14px;
-        line-height: 1.7;
-      }
-    }
-  }
-
-  .contents-recruit {
-    .c-table01 {
-      & tr {
-        & th {
-          vertical-align: top;
-          min-width: 200px;
-        }
-      }
-
-      & .u-view-sp {
-        display: none;
-      }
-    }
-
-  }
-}
-
-// * * * * * * * * * お知らせ一覧 * * * * * * 
-.news-wrapper {
-  padding: 0;
-
-  & .c-container {
-    padding: 0 10vw;
-  }
-
-  .c-news {
-    padding: 0;
-
-    &__title {
-      margin: 0 0 5vw 0;
-    }
-
-    &__list {
-      padding-bottom: 0;
-    }
-
-    &__link {
-      padding: 2vw 0;
-    }
-  }
-}
-
-// * * * * * * * * * お知らせ詳細 * * * * * * 
-.c-news-sl {
-
-  &__contents {
-    padding: 10vw 0;
-  }
-
-  .p-footer {
-    &__wrap {
-      display: flex;
-      justify-content: space-between;
-    }
-
-    & .p-open-time {
-      margin: 0;
-
-      &__wrap {
-        width: 90%;
-      }
-
-      &__table {
-        & th:first-child {
-          width: 9.8vw;
-        }
+        font-size: 24px;
       }
     }
   }

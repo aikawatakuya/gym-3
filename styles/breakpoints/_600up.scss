@@ -256,6 +256,22 @@
 
 // * * * * ** * * トレーナー * * * * * * *
 .c-trainers {
+  .c-features {
+
+    .c-container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .c-title {
+      width: 30%;
+    }
+
+    &__desc {
+      width: 65%;
+    }
+  }
+
   .c-staff {
     &__flex {
       display: flex;

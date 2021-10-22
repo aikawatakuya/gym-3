@@ -219,6 +219,44 @@ body.hidden {
   }
 }
 
+.c-title {
+  text-transform: uppercase;
+  @extend .mb-md;
+
+  & .en {
+    position: relative;
+    font-size: 26px;
+  }
+
+  & .ja {
+    position: relative;
+    top: -0.3rem;
+    font-size: 14px;
+    color: $cSubBlack;
+    padding-left: 30px;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      margin: auto;
+      content: '';
+      display: block;
+      height: 1px;
+      width: 25px;
+      background-color: $cGray;
+    }
+  }
+
+  @media (min-width:600px) {
+    & .ja {
+      display: block;
+      margin-top: 20px;
+    }
+  }
+}
+
 .item-tit {
   position: relative;
   text-align: center;
@@ -226,35 +264,6 @@ body.hidden {
   & span {
     position: relative;
     z-index: 100;
-  }
-}
-
-.c-title {
-  position: absolute;
-  top: 65%;
-  left: 50%;
-  transform: translateY(-50%) translateX(-50%);
-  margin: auto;
-  text-transform: uppercase;
-  padding: 5vw 5vw;
-  z-index: 3000;
-  text-align: center;
-  color: $cWhite;
-  @extend .mb-md;
-
-  & .en {
-    position: relative;
-    font-size: 34px;
-    display: block;
-    margin-bottom: 10px;
-  }
-
-  & .ja {
-    position: relative;
-    top: -0.3rem;
-    font-size: 18px;
-    padding-left: 8px;
-    display: block;
   }
 }
 
@@ -725,7 +734,7 @@ body.hidden {
   }
 
   &__date {
-    color: $cGreen;
+    color: $cBlue;
     letter-spacing: 2px;
   }
 
@@ -809,7 +818,8 @@ body.hidden {
 }
 
 //* * * * * * 特徴 * * * * * * *
-.c-about {
+.c-about,
+.c-method {
   background-color: $cWhite;
 
   .c-features {
@@ -819,7 +829,7 @@ body.hidden {
   }
 
   .c-points {
-    @extend .mb-lr;
+    @extend .pb-lr;
 
     & .tit {
       text-align: center;
@@ -958,7 +968,11 @@ body.hidden {
 
 //* * * * * * トレーナー * * * * * * *
 .c-trainers {
+  background-color: $cWhite;
+
   .c-features {
+    margin-top: 35vh;
+    padding-top: 30px;
     @extend .mb-md;
   }
 
@@ -1019,6 +1033,8 @@ body.hidden {
 //* * * * * * 採用情報 * * * * * * *
 .c-recruit {
   background-color: $cWhite;
+  margin-top: 35vh;
+  padding-top: 30px;
 
   &__title {
     text-align: center;
@@ -1032,8 +1048,6 @@ body.hidden {
   }
 
   .recruit-message {
-    padding-top: 60px;
-    @extend .c-mt;
     @extend .mb-md;
   }
 
@@ -1106,7 +1120,110 @@ body.hidden {
 
   .points-title {
     .c-txt-lg {
-      color: $cGreen;
+      color: $cBlue;
+      display: block;
+    }
+  }
+
+  .more-btn {
+    display: block;
+    text-align: center;
+  }
+}
+
+//* * * * * * よくあるご質問 * * * * * * * 
+.faq-wrapper {
+  background-color: $cWhite;
+  padding-top: 60px;
+  margin-top: 35vh;
+  overflow: hidden;
+
+  .faq {
+    @extend .mb-lr;
+
+    .c-txt-sm {
+      font-size: 16px;
+    }
+
+    & .c-txtarea01 {
+      @extend .mb-sm;
+    }
+
+    &__item {
+      @extend .mb-sm;
+    }
+
+    & dt {
+      position: relative;
+      cursor: pointer;
+      transition: color 0.2s cubic-bezier(0, 0, 0.58, 1);
+      padding: 0 0 6vw 0;
+
+      &::before {
+        content: 'Q';
+        position: absolute;
+        top: -5px;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+        width: 12px;
+        font-size: 20px;
+        color: rgb(25, 47, 119);
+      }
+
+      & span {
+        padding-right: 8vw;
+        margin-top: 4vw;
+        margin-left: 8vw;
+        line-height: 1.5;
+        display: block;
+        position: relative;
+        padding-left: 3vw;
+
+        &::after {
+          content: '';
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          right: 0;
+          width: 16px;
+          height: 16px;
+          background-image: url(/images/common/arrow-down-bl.png);
+          background-position: top center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          transition: all .2s;
+
+        }
+      }
+    }
+
+    & dd {
+      position: relative;
+
+      &::before {
+        content: 'A';
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+        width: 12px;
+        font-size: 22px;
+        color: rgb(25, 47, 119);
+      }
+
+      & .m-description-article {
+        margin: 2vw 0 2vw 8vw;
+        font-size: 3.7vw;
+        display: block;
+        line-height: 2;
+        padding-left: 3vw;
+      }
+    }
+
+    .more-btn {
       display: block;
     }
   }
@@ -1114,11 +1231,13 @@ body.hidden {
 
 //* * * * * * news-page * * * * * * *
 .c-news {
-  padding: 0 0 10vw 0;
+  margin-top: 35vh;
   letter-spacing: 3px;
   background-color: $cWhite;
-  padding-top: 60px;
-  @extend .c-mt;
+
+  &__title {
+    padding-top: 30px;
+  }
 
   &__item {
     &:first-child {
@@ -1138,7 +1257,7 @@ body.hidden {
   }
 
   &__date {
-    color: $cGreen;
+    color: $cBlue;
     margin-bottom: 5px;
   }
 
@@ -1251,14 +1370,14 @@ body.hidden {
 .c-news-sl {
   background-color: $cWhite;
   padding-top: 60px;
-  @extend .c-mt;
+  margin-top: 35vh;
 
   & .c-container {
     padding: 0 5vw 0 5vw;
   }
 
   &__date {
-    color: $cGreen;
+    color: $cBlue;
   }
 
   &__contents {
