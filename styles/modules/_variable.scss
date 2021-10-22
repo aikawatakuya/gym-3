@@ -1,0 +1,216 @@
+$cShadowBlack :black;
+$cBlack: rgb(39, 39, 39);
+$cSubBlack: #434749;
+$cGray: #949494;
+$cWhite:#fff;
+$cSubWhite:rgb(245, 245, 245);
+$cBlue: rgb(52, 126, 175);
+$cShadowBlue: rgb(32, 80, 119);
+$cSubBlue: #e2eaf3;
+$cOrange :#F99900;
+$cGreen :green;
+$cContact: rgb(248, 248, 250);
+$cBg:#f0f0f0;
+$cBgTop:#f9f9f6;
+$cNum:#dad7cd;
+$cYellow:#dbd4bd;
+$cSubYellow:#968a64;
+$cSpbtn : rgba(248, 248, 250, 0.9);
+$cContact: rgb(248, 248, 250);
+$cHeader:rgba(255, 255, 255, 0.9);
+$cHeader-pc:rgba(0, 0, 0, 0.9);
+$breakpoints: ('md': 'screen and (min-width: 600px)',
+  'lr': 'screen and (min-width: 960px)',
+  'lg': 'screen and (min-width: 1200px)',
+) !default;
+
+.c-txt-lg {
+  font-size: 26px;
+  letter-spacing: 2px;
+  line-height: 2;
+
+  @include mq(md) {
+    font-size: 30px;
+  }
+
+  @include mq(lr) {
+    font-size: 36px;
+  }
+
+  @include mq(lg) {
+    font-size: 40px;
+  }
+}
+
+.c-txt-lr {
+  font-size: 24px;
+  letter-spacing: 4px;
+  line-height: 2;
+
+  @include mq(md) {
+    font-size: 24px;
+  }
+
+  @include mq(lr) {
+    font-size: 32px;
+  }
+
+  @include mq(lg) {
+    font-size: 36px;
+  }
+}
+
+.c-txt-md {
+  font-size: 20px;
+  letter-spacing: 2px;
+  line-height: 2;
+
+  @include mq(md) {
+    font-size: 20px;
+  }
+
+  @include mq(lr) {
+    font-size: 22px;
+  }
+
+  @include mq(lg) {
+    font-size: 24px;
+  }
+}
+
+.c-txt-sm {
+  font-size: 14px;
+  letter-spacing: 2px;
+  line-height: 2;
+
+  @include mq(md) {
+    line-height: 1.7;
+  }
+
+  @include mq(lr) {
+    font-size: 18px;
+  }
+
+  @include mq(lg) {
+    font-size: 18px;
+  }
+}
+
+.c-txt-xs {
+  font-size: 10px;
+  letter-spacing: 2px;
+  line-height: 2;
+  color: $cBlue;
+
+  @include mq(md) {
+    font-size: 12px;
+  }
+
+  @include mq(lr) {
+    font-size: 18px;
+  }
+
+  @include mq(lg) {
+    font-size: 16px;
+  }
+}
+
+.c-mt {
+  margin-top: 30px;
+
+  @include mq(md) {
+    margin-bottom: 30px;
+  }
+
+  @include mq(lr) {
+    margin-bottom: 30px;
+  }
+}
+
+.mb-sm {
+  margin-bottom: 30px;
+
+  @include mq(md) {
+    margin-bottom: 30px;
+  }
+
+  @include mq(lr) {
+    margin-bottom: 30px;
+  }
+}
+
+.mb-md {
+  margin-bottom: 50px;
+
+  @include mq(md) {
+    margin-bottom: 40px;
+  }
+
+  @include mq(lr) {
+    margin-bottom: 60px;
+  }
+}
+
+.mb-lr {
+  margin-bottom: 70px;
+
+  @include mq(md) {
+    margin-bottom: 80px;
+  }
+
+  @include mq(lr) {
+    margin-bottom: 80px;
+  }
+}
+
+.pb-sm {
+  padding-bottom: 30px;
+
+  @include mq(md) {
+    padding-bottom: 30px;
+  }
+
+  @include mq(lr) {
+    padding-bottom: 30px;
+  }
+}
+
+.pb-md {
+  padding-bottom: 50px;
+
+  @include mq(md) {
+    padding-bottom: 40px;
+  }
+
+  @include mq(lr) {
+    padding-bottom: 60px;
+  }
+}
+
+.pb-lr {
+  padding-bottom: 70px;
+
+  @include mq(md) {
+    padding-bottom: 80px;
+  }
+
+  @include mq(lr) {
+    padding-bottom: 80px;
+  }
+}
+
+.c-container {
+  padding: 0 6vw;
+
+  @include mq(md) {
+    padding: 0 6vw;
+  }
+
+  @include mq(lr) {
+    padding: 0 6vw;
+  }
+
+  @include mq(lg) {
+    padding: 0 8vw;
+  }
+}

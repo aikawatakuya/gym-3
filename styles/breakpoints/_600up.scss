@@ -1,0 +1,447 @@
+.more-btn {
+  display: block;
+  text-align: center;
+}
+
+
+.more-btn {
+  &__link {
+    width: 220px;
+    height: 60px;
+    padding: 14px 15px;
+
+    & span {
+      font-size: 18px;
+    }
+  }
+}
+
+//.top-view 
+.top-view {
+  .swiper-container {
+    height: 90vh;
+    margin-right: 0;
+  }
+
+  .hero {
+    &__text {
+      bottom: 30%;
+    }
+  }
+}
+
+//.p-about 
+.p-about {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+
+  &__img {
+    ul {
+      li {
+        &:last-of-type {
+          margin-top: 120px;
+        }
+      }
+    }
+  }
+
+  &__txt {
+    width: 40%;
+  }
+
+  &__img {
+    width: 55%;
+  }
+}
+
+//.p-others
+.p-others {
+
+  a:hover {
+    .bg-img {
+      transform: scale(1.04);
+      transition: all 0.4s;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    width: 50%;
+
+    & a {
+      height: 220px;
+    }
+  }
+
+}
+
+//.p-price
+.p-price {
+  padding-top: 50px;
+
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  &__img {
+    height: 400px;
+  }
+
+  &__wrap {
+    width: 48%;
+  }
+
+  &-container {
+    width: 48%;
+  }
+}
+
+//.p-instagram
+.p-instagram {
+  & a {
+    height: auto;
+  }
+
+  & .more-btn {
+    display: block;
+  }
+}
+
+//.p-access 
+.p-access {
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__img {
+    width: 48%;
+  }
+
+  &__txt {
+    width: 48%;
+  }
+}
+
+//.p-voices
+.p-voices {
+  & ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    width: 48%;
+  }
+
+  & .more-btn {
+    display: block;
+  }
+}
+
+//.p-news
+.p-news {
+  & .c-container {
+    padding: 0 10vw;
+  }
+
+  &__content {
+    font-size: 16px;
+  }
+}
+
+//.p-footer
+.p-footer {
+  &__logo {
+    width: 30%;
+
+    & img {
+      width: 100px;
+      object-fit: contain;
+    }
+  }
+
+  &__nav {
+    width: 70%;
+
+    & ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 40px;
+    }
+
+    & li {
+      width: 50%;
+    }
+  }
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__address {
+    width: 40%;
+    border-left: 1px solid rgb(224, 223, 223);
+  }
+}
+
+
+// * * * * ** * * 特徴 * * * * * * *
+.c-about,
+.c-method {
+  .c-features {
+
+    .c-container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .c-title {
+      width: 30%;
+    }
+
+    &__desc {
+      width: 65%;
+    }
+  }
+
+  .c-points {
+    & li {
+      display: flex;
+      justify-content: space-between;
+
+      &:nth-child(2n) {
+        flex-direction: row-reverse;
+      }
+    }
+
+
+    &__img {
+      width: 50%;
+    }
+
+    &__desc {
+      width: 50%;
+    }
+  }
+
+  .c-flow {
+    &-item {
+      .c-container {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+
+    & .item-wrap {
+      width: 48%;
+    }
+
+    & .item-img {
+      width: 48%;
+    }
+  }
+}
+
+// * * * * ** * * トレーナー * * * * * * *
+.c-trainers {
+  .c-staff {
+    &__flex {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__img {
+      width: 45%;
+    }
+
+    &__desc {
+      width: 50%;
+    }
+  }
+}
+
+// * * * * * * * * * よくあるご質問* * * * * * 
+.faq-wrapper {
+  .faq-contents {
+    & .c-container {
+      padding: 0 7vw;
+    }
+
+    & .faq {
+
+      &__title {
+        text-align: center;
+      }
+
+      & .c-txt-sm {
+        font-size: 16px;
+      }
+
+      & .c-txt-md {
+        font-size: 18px;
+      }
+
+      & dt {
+        &::before {
+          font-size: 28px;
+        }
+
+        & span {
+          &::after {
+            width: 3vw;
+          }
+        }
+      }
+
+      & dd {
+        &::before {
+          font-size: 30px;
+        }
+      }
+    }
+
+    & .nw-topview {
+      margin: 0 -3vw;
+
+      &__inner {
+        margin: 0 -4vw;
+      }
+    }
+
+    .p-footer {
+      &__wrap {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      & .p-open-time {
+        margin: 0;
+
+        &__wrap {
+          width: 90%;
+        }
+
+        &__table {
+          & th:first-child {
+            width: 9.8vw;
+          }
+        }
+      }
+    }
+  }
+}
+
+//* * * * * * * * * * 採用情報 * * * * * * * * 
+.c-recruit {
+  .c-container {
+    padding: 0 5vw;
+  }
+
+  & ul {
+    display: flex;
+    justify-content: space-between;
+
+    & li {
+      width: 30%;
+      line-height: 1;
+    }
+
+    .points-title {
+      margin-bottom: 25px;
+
+      & .c-txt-lr {
+        line-height: 1.5;
+        font-size: 18px;
+      }
+    }
+
+    .points-desc {
+      & .c-txt-sm {
+        font-size: 14px;
+        line-height: 1.7;
+      }
+    }
+  }
+
+  .contents-recruit {
+    .c-table01 {
+      & tr {
+        & th {
+          vertical-align: top;
+          min-width: 200px;
+        }
+      }
+
+      & .u-view-sp {
+        display: none;
+      }
+    }
+
+  }
+}
+
+// * * * * * * * * * お知らせ一覧 * * * * * * 
+.news-wrapper {
+  padding: 0;
+
+  & .c-container {
+    padding: 0 10vw;
+  }
+
+  .c-news {
+    padding: 0;
+
+    &__title {
+      margin: 0 0 5vw 0;
+    }
+
+    &__list {
+      padding-bottom: 0;
+    }
+
+    &__link {
+      padding: 2vw 0;
+    }
+  }
+}
+
+// * * * * * * * * * お知らせ詳細 * * * * * * 
+.c-news-sl {
+
+  &__contents {
+    padding: 10vw 0;
+  }
+
+  .p-footer {
+    &__wrap {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    & .p-open-time {
+      margin: 0;
+
+      &__wrap {
+        width: 90%;
+      }
+
+      &__table {
+        & th:first-child {
+          width: 9.8vw;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,80 @@
+.swiper-container {
+  height: 90vh;
+  overflow: visible !important;
+}
+
+.swiper-slide {
+  overflow: hidden;
+
+  &-active {
+
+    & .hero-img {
+      animation: zoom 6.5s forwards;
+    }
+  }
+}
+
+//**********  スクロールダウン  ********
+.scrolldown {
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  bottom: -60px;
+  transform: translateY(-50%) translateX(-50%);
+  margin: auto;
+  z-index: 2;
+  padding: 10px 10px 38px;
+  overflow: hidden;
+  color: $cWhite;
+  font-size: 12px;
+
+  @media (min-width:960px) {
+    font-size: 14px;
+  }
+
+  @media (min-width:1200px) {
+    bottom: 22px;
+  }
+
+  font-family: 'Josefin Sans',
+  sans-serif;
+  line-height: 1;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  writing-mode: vertical-lr;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 1px;
+    height: 60px;
+    background: $cWhite;
+  }
+
+  &::after {
+    height: 20px;
+    animation: sdl 2s ease infinite;
+  }
+
+  @keyframes sdl {
+    0% {
+      transform: translateY(-20px);
+    }
+
+    100% {
+      transform: translateY(25px);
+    }
+  }
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(1.1);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}

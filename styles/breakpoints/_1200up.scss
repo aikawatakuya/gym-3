@@ -1,0 +1,57 @@
+.c-topview {
+  &__img {
+    height: 45vh;
+  }
+}
+
+
+.top-view {
+  .swiper-container {
+    height: 100vh;
+  }
+
+  .hero {
+    &__text {
+      bottom: 0;
+    }
+  }
+}
+
+.p-about {
+
+  &__img {
+    ul {
+      li {
+        height: 300px;
+      }
+    }
+  }
+}
+
+//* * * * * * 採用情報 * * * * * * * 
+.c-recruit {
+  .c-container {
+    padding: 0 18vw;
+  }
+
+  .recruit-message {
+
+    ul {
+      li {
+        .points-title {
+          margin-bottom: 30px;
+
+          & .c-txt-lr {
+            font-size: 22px;
+          }
+        }
+
+        .points-desc {
+          & .c-txt-sm {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}
