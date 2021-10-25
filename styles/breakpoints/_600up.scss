@@ -6,9 +6,7 @@
 
 .more-btn {
   &__link {
-    width: 220px;
-    height: 60px;
-    padding: 14px 15px;
+    padding: 20px 15px;
 
     & span {
       font-size: 18px;
@@ -412,20 +410,12 @@
 .news-wrapper {
   padding: 0;
 
+
   & .c-container {
     padding: 0 10vw;
   }
 
   .c-news {
-    padding: 0;
-
-    &__title {
-      margin: 0 0 5vw 0;
-    }
-
-    &__list {
-      padding-bottom: 0;
-    }
 
     &__link {
       padding: 2vw 0;

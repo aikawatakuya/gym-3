@@ -57,25 +57,14 @@ body.hidden {
   }
 }
 
-.tit {
-  text-align: center;
-  font-size: 20px;
-  @extend .mb-sm;
-
-  & .en {
-    font-size: 12px;
-    color: $cBlue;
-  }
-}
-
 .icon-tel {
   display: inline-block;
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   bottom: 0;
   margin: auto;
-  background-image: url(/images/common/icon-tel.png);
+  background-image: url(/images/common/tel-white.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -87,10 +76,10 @@ body.hidden {
   display: inline-block;
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   bottom: 0;
   margin: auto;
-  background-image: url(/images/common/icon-link-1-black.png);
+  background-image: url(/images/common/icon-link-1-white.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -135,27 +124,25 @@ body.hidden {
 }
 
 .c-topview {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  width: 100%;
+  position: relative;
+  margin-bottom: 30px;
 
   &__img {
     position: relative;
-    height: 35vh;
+
+    height: 30vh;
 
     &::before {
       content: "";
       display: block;
       height: 100%;
       width: 100%;
-      background-color: rgb(2, 2, 26);
+      background-color: rgb(16, 16, 63);
       position: absolute;
       top: 0;
       left: 0;
       z-index: 3000;
-      opacity: 0.4;
+      opacity: 0.2;
     }
   }
 
@@ -189,12 +176,15 @@ body.hidden {
 }
 
 .p-title {
+  position: relative;
   text-transform: uppercase;
   @extend .mb-md;
+  text-align: center;
 
   & .en {
-    position: relative;
-    font-size: 26px;
+    display: block;
+    font-size: 30px;
+    letter-spacing: 4px;
   }
 
   & .ja {
@@ -202,30 +192,32 @@ body.hidden {
     top: -0.3rem;
     font-size: 14px;
     color: $cSubBlack;
-    padding-left: 30px;
+    padding-left: 8px;
+  }
 
-    &::before {
-      position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      margin: auto;
-      content: '';
-      display: block;
-      height: 1px;
-      width: 25px;
-      background-color: $cGray;
-    }
+  &::after {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    content: "";
+    display: inline-block;
+    width: 80px;
+    height: 1px;
+    background-color: $cBlue;
   }
 }
 
 .c-title {
+  position: relative;
   text-transform: uppercase;
-  @extend .mb-md;
+  @extend.mb-sm;
 
   & .en {
-    position: relative;
-    font-size: 26px;
+    display: block;
+    font-size: 30px;
+    letter-spacing: 4px;
   }
 
   & .ja {
@@ -233,62 +225,47 @@ body.hidden {
     top: -0.3rem;
     font-size: 14px;
     color: $cSubBlack;
+    padding-bottom: 10px;
+
+    &::after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      content: "";
+      display: inline-block;
+      width: 80px;
+      height: 1px;
+      background-color: $cBlue;
+    }
+  }
+}
+
+.tit {
+  text-align: center;
+  font-size: 20px;
+  @extend .mb-sm;
+
+  & .en {
+    font-size: 12px;
+    color: $cBlue;
+  }
+}
+
+.c-sub-title {
+  & p {
+    position: relative;
     padding-left: 30px;
 
     &::before {
       position: absolute;
-      top: 0;
+      content: "";
       left: 0;
-      bottom: 0;
-      margin: auto;
-      content: '';
-      display: block;
-      height: 1px;
-      width: 25px;
-      background-color: $cGray;
+      top: 50%;
+      width: 20px;
+      height: 3px;
+      background: $cBlue;
     }
-  }
-
-  @media (min-width:600px) {
-    & .ja {
-      display: block;
-      margin-top: 20px;
-    }
-  }
-}
-
-.item-tit {
-  position: relative;
-  text-align: center;
-
-  & span {
-    position: relative;
-    z-index: 100;
-  }
-}
-
-.c-subTitle {
-  position: relative;
-  text-align: center;
-  margin-bottom: 30px;
-
-  & .en {
-    position: absolute;
-    top: -25px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    font-size: 68px;
-    color: $cGray;
-    opacity: 0.1;
-    text-align: center;
-  }
-
-  & .ja {
-    position: relative;
-    z-index: 100;
-    letter-spacing: 3px;
   }
 }
 
@@ -298,21 +275,22 @@ body.hidden {
   text-align: center;
 
   &__link {
-    background-color: $cWhite;
+    background-color: $cShadowBlack;
+    height: 50px;
     display: inline-block;
-    padding: 12px 15px;
+    padding: 10px 15px;
     border: 1px solid $cShadowBlack;
     z-index: 1;
 
     & span {
       position: relative;
-      color: $cBlack;
+      color: $cWhite;
 
       &:first-child {
         padding-right: 30px;
 
         &::before {
-          content: '';
+          content: "";
           display: block;
           position: absolute;
           top: 0;
@@ -320,11 +298,11 @@ body.hidden {
           bottom: 0;
           margin: auto;
           width: 20px;
-          background-image: url(/images/common/arrow.png);
+          background-image: url(/images/common/arrow-wh.png);
           background-position: center;
           background-repeat: no-repeat;
           background-size: contain;
-          transition: .3s;
+          transition: 0.3s;
           z-index: 100;
         }
       }
@@ -338,7 +316,7 @@ body.hidden {
         display: inline-block;
         width: 100%;
         height: 100%;
-        background-color: $cShadowBlack;
+        background-color: $cWhite;
         position: absolute;
         top: 0;
         left: 0;
@@ -351,20 +329,19 @@ body.hidden {
         z-index: 1;
 
         & span {
-          color: $cWhite;
+          color: $cBlack;
           transform: none;
 
           &:first-child {
-
             &::before {
-              background-image: url(/images/common/arrow-wh.png);
+              background-image: url(/images/common/arrow.png);
             }
           }
         }
       }
     }
 
-    @media (min-width:600px) {
+    @media (min-width: 600px) {
       padding: 20px 40px;
       height: auto;
 
@@ -378,16 +355,15 @@ body.hidden {
 //* * * * * * ホーム * * * * * * *
 //.topview
 .top-view {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  z-index: -1;
+  position: relative;
+  margin-bottom: 100px;
 
   .hero {
     position: relative;
+
+    .swiper-slide {
+      height: 60vh;
+    }
 
     &__text {
       position: absolute;
@@ -395,17 +371,14 @@ body.hidden {
       left: 50%;
       transform: translateY(-50%) translateX(-50%);
       margin: auto;
-      z-index: 6000;
+      z-index: 1000;
       color: $cWhite;
+      text-shadow: 1px 1px 1px $cSubBlack;
       width: 100%;
       text-align: center;
 
       & h2 {
-        font-size: 36px;
-        font-weight: bold;
-        display: inline-block;
-        text-align: left;
-        line-height: 1.8;
+        font-size: 24px;
       }
     }
 
@@ -422,7 +395,7 @@ body.hidden {
     }
   }
 
-  .swiper-container {
+  .bg {
     position: relative;
 
     &::before {
@@ -430,12 +403,12 @@ body.hidden {
       top: 0;
       left: 0;
       content: "";
+      display: block;
       height: 100%;
       width: 100%;
-      display: block;
-      background: $cBlack;
-      z-index: 7000;
-      opacity: 0.2;
+      background-color: $cBlack;
+      opacity: 0.3;
+      z-index: 100;
     }
   }
 }
@@ -443,10 +416,7 @@ body.hidden {
 //.p-about
 .p-about {
   position: relative;
-  @extend .pb-lr;
-  padding-top: 30px;
-  margin-top: 90vh;
-  background-color: $cWhite;
+  @extend .mb-lr;
 
   &__img {
     & ul {
@@ -473,91 +443,59 @@ body.hidden {
   }
 }
 
-//.p-price
-.p-price {
+//.p-aicatch
+.p-aicatch {
   @extend .pb-lr;
-  background-color: $cWhite;
-}
+  background-color: $cHeader;
+  color: $cWhite;
 
-//.p-others
-.p-others {
-  @extend .pb-md;
-  background-color: $cWhite;
+  &__img {
+    @extend .pb-lr;
+  }
 
-  &__item {
-    display: block;
-
-    & a {
-      position: relative;
-      display: block;
-      height: 200px;
-    }
-
-    & .bg-img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      background-image: url(/images/home/method-top.jpg);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      display: block;
-      width: 100%;
-      height: 100%;
-      transition: all 0.4s;
-
-      &::before {
-        content: "";
-        display: block;
-        height: 100%;
-        width: 100%;
-        background-color: $cBlack;
-        opacity: 0.4;
-      }
-    }
-
-    & .c-txt-md {
-      font-weight: 400;
-      line-height: 1;
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translateX(-50%) translateY(-50%);
-      color: $cWhite;
-      white-space: nowrap;
-    }
-
-    &:nth-of-type(2) {
-      & .bg-img {
-        background-image: url(/images/home/sholder_3.jpg);
-      }
-    }
-
-    &:nth-of-type(3) {
-      & .bg-img {
-        background-image: url(/images/home/dumbbell_1.jpg);
-      }
-    }
+  &__desc {
+    text-align: center;
+    font-weight: bold;
   }
 }
 
 //.p-staff
 .p-staff {
   @extend .pb-lr;
-  background-color: $cWhite;
+  background-color: $cHeader;
 
   &__img {
     @extend .mb-sm;
   }
 
+  .p-title {
+    & span {
+      color: $cWhite;
+    }
+  }
+
   &__desc {
     @extend .mb-sm;
+    color: $cWhite;
   }
 
   .more-btn {
     &__link {
       border: 1px solid $cWhite;
     }
+  }
+}
+
+//.p-method
+.p-method {
+  @extend .pb-lr;
+
+  &__img {
+    @extend .pb-sm;
+  }
+
+  &__desc {
+    @extend .pb-sm;
   }
 }
 
@@ -589,7 +527,7 @@ body.hidden {
     & dt {
       & span {
         display: block;
-        font-size: 12px
+        font-size: 12px;
       }
     }
 
@@ -604,16 +542,22 @@ body.hidden {
         margin-top: -10px;
       }
     }
-
-
   }
 }
 
 //.p-access
 .p-access {
-  @extend .pb-lr;
+  @extend .pb-md;
+  @extend .mb-lr;
   padding-top: 20px;
-  background-color: $cWhite;
+  color: $cWhite;
+  background-color: $cHeader;
+
+  .p-title {
+    & span {
+      color: $cWhite;
+    }
+  }
 
   &__img {
     @extend .mb-sm;
@@ -623,7 +567,7 @@ body.hidden {
     @extend .mb-sm;
 
     & a {
-      color: $cBlack;
+      color: $cWhite;
     }
   }
 
@@ -637,15 +581,14 @@ body.hidden {
 
   .more-btn {
     &__link {
-      border: 1px solid $cBlack;
+      border: 1px solid $cWhite;
     }
   }
 }
 
 //.p-instagram
 .p-instagram {
-  @extend .pb-lr;
-  background-color: $cWhite;
+  @extend .mb-lr;
 
   &__img {
     display: flex;
@@ -689,7 +632,6 @@ body.hidden {
 
     & .name {
       font-weight: bold;
-
     }
 
     & .tit {
@@ -701,15 +643,15 @@ body.hidden {
 
   .p-voice01 {
     &__img {
-      text-align: center
+      text-align: center;
     }
   }
 }
 
 //.p-news
 .p-news {
-  background-color: $cWhite;
-  @extend .pb-md;
+  padding-top: 20px;
+  @extend .mb-md;
 
   & .p-title {
     .en {
@@ -742,18 +684,16 @@ body.hidden {
   }
 }
 
-
 //.p-footer
 .p-footer {
   padding: 40px 0;
-  border-top: 1px solid #ededed;
-  background-color: $cWhite;
+  background-color: $cContact;
 
   &__logo {
     @extend .mb-sm;
 
     & img {
-      width: 25%;
+      width: 35%;
     }
   }
 
@@ -790,7 +730,7 @@ body.hidden {
       }
 
       & .c-txt-sm {
-        font-size: 12px;
+        font-size: 13px;
         color: $cBlack;
       }
     }
@@ -819,27 +759,12 @@ body.hidden {
 //* * * * * * 特徴 * * * * * * *
 .c-about,
 .c-method {
-  background-color: $cWhite;
-
   .c-features {
-    margin-top: 35vh;
-    padding-top: 30px;
     @extend .mb-lr;
   }
 
   .c-points {
-    @extend .pb-lr;
-
-    & .tit {
-      text-align: center;
-      font-size: 20px;
-      @extend .mb-sm;
-
-      & .en {
-        font-size: 12px;
-        color: $cBlue;
-      }
-    }
+    @extend .mb-lr;
 
     &__img {
       @extend .mb-sm;
@@ -870,15 +795,12 @@ body.hidden {
       }
     }
   }
-
   .c-flow {
     padding-top: 50px;
-    @extend .pb-lr;
-
+    @extend .mb-lr;
     &-content {
       @extend .mb-lr;
     }
-
     .item {
       &-tit {
         @extend .mb-sm;
@@ -915,7 +837,6 @@ body.hidden {
         border-width: 20px 40px 0 40px;
         border-color: #f0f0f0 transparent transparent transparent;
       }
-
       &:last-child {
         &::after {
           display: none;
@@ -929,15 +850,25 @@ body.hidden {
       &::after {
         border-color: #fff transparent transparent transparent;
       }
-
     }
-
 
     #flow01,
     #flow03,
     #flow05,
     #flow07 {
       background-color: $cBg;
+    }
+  }
+
+  @media (max-width: 599px) {
+    & .item-img.view-pc {
+      display: none;
+    }
+  }
+
+  @media (min-width: 600px) {
+    & .item-img.view-sp {
+      display: none;
     }
   }
 
@@ -949,34 +880,16 @@ body.hidden {
       width: auto;
     }
   }
-
-  @media (max-width:599px) {
-    & .item-img.view-pc {
-      display: none
-    }
-  }
-
-  @media (min-width:600px) {
-    & .item-img.view-sp {
-      display: none
-    }
-  }
-
-
 }
 
 //* * * * * * トレーナー * * * * * * *
 .c-trainers {
-  background-color: $cWhite;
-
   .c-features {
-    margin-top: 35vh;
-    padding-top: 30px;
-    @extend .pb-md;
+    @extend .mb-md;
   }
 
   .c-staff {
-    @extend .pb-md;
+    @extend .mb-md;
 
     &__item {
       @extend .mb-md;
@@ -999,6 +912,8 @@ body.hidden {
     }
 
     &__name {
+      margin-bottom: 10px;
+
       & .en {
         font-size: 14px;
         letter-spacing: 3px;
@@ -1031,9 +946,7 @@ body.hidden {
 
 //* * * * * * 採用情報 * * * * * * *
 .c-recruit {
-  background-color: $cWhite;
-  margin-top: 35vh;
-  padding-top: 30px;
+  @extend .mb-lr;
 
   &__title {
     text-align: center;
@@ -1102,6 +1015,10 @@ body.hidden {
     }
   }
 
+  .more-btn {
+    display: block;
+  }
+
   @media (max-width: 599px) {
     .c-table01 {
       th {
@@ -1123,22 +1040,11 @@ body.hidden {
       display: block;
     }
   }
-
-  .more-btn {
-    display: block;
-    text-align: center;
-  }
 }
 
-//* * * * * * よくあるご質問 * * * * * * * 
+//* * * * * * よくあるご質問 * * * * * * *
 .faq-wrapper {
   overflow: hidden;
-
-  .faq-contents {
-    padding-top: 60px;
-    margin-top: 35vh;
-    background-color: $cWhite;
-  }
 
   .faq {
     @extend .mb-lr;
@@ -1162,7 +1068,7 @@ body.hidden {
       padding: 0 0 6vw 0;
 
       &::before {
-        content: 'Q';
+        content: "Q";
         position: absolute;
         top: -5px;
         left: 0;
@@ -1183,7 +1089,7 @@ body.hidden {
         padding-left: 3vw;
 
         &::after {
-          content: '';
+          content: "";
           position: absolute;
           top: 0;
           bottom: 0;
@@ -1195,8 +1101,7 @@ body.hidden {
           background-position: top center;
           background-repeat: no-repeat;
           background-size: contain;
-          transition: all .2s;
-
+          transition: all 0.2s;
         }
       }
     }
@@ -1205,7 +1110,7 @@ body.hidden {
       position: relative;
 
       &::before {
-        content: 'A';
+        content: "A";
         position: absolute;
         top: 0;
         left: 0;
@@ -1231,25 +1136,15 @@ body.hidden {
   }
 }
 
-//* * * * * * news-page * * * * * * *
+//* * * * * * お知らせ一覧 * * * * * * *
 .c-news {
-  margin-top: 35vh;
+  padding: 0 0 10vw 0;
   letter-spacing: 3px;
-  background-color: $cWhite;
-  @extend .pb-sm;
-
-  &__title {
-    padding-top: 30px;
-  }
 
   &__item {
     &:first-child {
       border-top: 1px solid rgb(235, 235, 235);
     }
-  }
-
-  &__list {
-    @extend .pb-sm;
   }
 
   &__link {
@@ -1266,6 +1161,10 @@ body.hidden {
   &__date {
     color: $cBlue;
     margin-bottom: 5px;
+  }
+
+  &__list {
+    padding-bottom: 5vw;
   }
 
   .page-numbers {
@@ -1359,9 +1258,9 @@ body.hidden {
 
   &__title {
     text-align: center;
+    margin: 0 0 10vw 0;
     letter-spacing: 2px;
     font-weight: 100;
-    @extend .mb-sm;
   }
 
   .c-news__block {
@@ -1369,12 +1268,8 @@ body.hidden {
   }
 }
 
-//* * * * * * news-single-page * * * *
+//* * * * * * お知らせ詳細 * * * *
 .c-news-sl {
-  background-color: $cWhite;
-  padding-top: 60px;
-  margin-top: 35vh;
-
   & .c-container {
     padding: 0 5vw 0 5vw;
   }
@@ -1384,11 +1279,12 @@ body.hidden {
   }
 
   &__contents {
-    padding: 10vw 0 5vw 0;
+    padding: 10vw 0 0 0;
     line-height: 2.5;
   }
 
   &__link {
+    margin: 0 0 10vw 0;
     text-align: right;
     font-size: 0.8rem;
 
@@ -1396,7 +1292,6 @@ body.hidden {
       display: inline-block;
       padding-bottom: 5px;
       border-bottom: 1px solid rgb(114, 114, 114);
-
       & span {
         color: $cBlack;
       }
@@ -1406,53 +1301,29 @@ body.hidden {
 
 //* * * * * * お問い合わせフォーム * * * * *
 .c-contact {
-  @media (max-width:599px) {
-    .c-title {
-      & .ja {
-        margin-top: 10px;
-        display: block;
-      }
-    }
-  }
+  background-color: $cContact;
 
   .c-topview {
     &__img {
       @extend .mb-sm;
     }
 
-
+    .c-container {
+      p {
+        text-align: center;
+        font-weight: bold;
+      }
+    }
   }
 
   .c-description {
-    margin-top: 35vh;
-    background-color: $cWhite;
-  }
-
-  #white {
-    padding-top: 30px;
-    @extend .pb-md;
-
-    p {
-      text-align: center;
-      font-weight: bold;
-    }
-  }
-
-  #black {
-    background-color: black;
+    padding: 40px 0;
+    background-color: $cHeader;
     color: $cWhite;
-    padding-top: 30px;
-    @extend .pb-md;
-    text-align: center;
-    margin: auto;
+    @extend .mb-md;
 
     ul {
       padding: 20px 0;
-      display: inline-block;
-    }
-
-    li {
-      text-align: left;
     }
 
     .c-txt-xs {
@@ -1462,10 +1333,8 @@ body.hidden {
   }
 
   .contact-form {
-    padding-top: 40px;
-    @extend .pb-lr;
+    margin-bottom: 40px;
     text-align: center;
-    background-color: $cContact;
 
     & h1 {
       display: block;
@@ -1777,18 +1646,3 @@ body.hidden {
     }
   }
 }
-
-// ページ遷移アニメーション
-// .pageFadein {
-//   animation: fadein 3s forwards;
-// }
-
-// @keyframes fadein {
-//   0% {
-//     opacity: 0
-//   }
-
-//   100% {
-//     opacity: 1
-//   }
-// }
