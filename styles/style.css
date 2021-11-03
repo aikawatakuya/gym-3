@@ -4400,7 +4400,8 @@ body.hidden {
   .p-news__content {
     font-size: 24px;
   }
-  .p-header .mobile-container {
+  .p-header .mobile-container,
+  .p-header .mobile-menu {
     display: none;
   }
   .news-wrapper .c-title {

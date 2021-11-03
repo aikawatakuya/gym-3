@@ -76,7 +76,9 @@
 }
 
 .p-header {
-  .mobile-container {
+
+  .mobile-container,
+  .mobile-menu {
     display: none;
   }
 }
