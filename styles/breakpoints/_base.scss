@@ -710,6 +710,7 @@ body.hidden {
 .p-news {
   background-color: $cWhite;
   @extend .pb-md;
+  padding-top: 20px;
 
   & .p-title {
     .en {

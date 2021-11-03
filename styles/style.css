@@ -956,6 +956,7 @@ body.hidden {
 
 .p-news {
   background-color: #fff;
+  padding-top: 20px;
 }
 
 .p-news .p-title .en::before {
