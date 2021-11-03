@@ -1,91 +1,20 @@
+<?php /* Template Name: アバウト*/ ?>
 <!DOCTYPE html>
 <html lang="ja">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <?php get_header(); ?>
   <title>RivRoundについて | ジムテンプレート3</title>
-  <link rel="stylesheet" href="/styles/vendor/animsition.min.css">
-  <link rel="stylesheet" href="/styles/vendor/bootstrap-reboot.css">
-  <link rel="stylesheet" href="/styles/style.css">
 </head>
 
 <body>
   <div class="superwrapper animsition">
     <main id="main-contents" class="c-about">
-      <header id="header" class="p-header">
-        <div class="mobile-container">
-          <div class=" logo__img">
-            <a href="/">
-              <div class="logo"></div>
-            </a>
-          </div>
-          <div class="mobile-button">
-            <button class="mobile-menu__btn">
-              <span></span>
-              <span></span>
-              <span></span>
-            </button>
-          </div>
-        </div>
-        <!-- /.mobile-container -->
-        <div class="pc-container">
-          <div class=" logo__img">
-            <a class="animsition-link" href="/">
-              <div class="logo-pc logo"></div>
-            </a>
-          </div>
-          <nav class="pc-nav">
-            <ul class="pc-nav-list">
-              <li class="pc-nav-item">
-                <a class="pc-nav-link animsition-link" href="/about/about.html"><span>RivRoundについて</span>
-                  <small>ABOUT</small></a>
-              </li>
-              <li class="pc-nav-item">
-                <a class="pc-nav-link animsition-link"
-                  href="/method/method.html"><span>トレーニングメソッド</span><small>METHOD</small></a>
-              </li>
-              <li class="pc-nav-item">
-                <a class="pc-nav-link animsition-link"
-                  href="/trainers/trainers.html"><span>スタッフ紹介</span><small>STAFF</small></a>
-              </li>
-              <li class="pc-nav-item">
-                <a class="pc-nav-link animsition-link" href="/faq/faq.html"><span>よくあるご質問</span><small>FAQ</small></a>
-              </li>
-              <li class="pc-nav-item">
-                <a class="pc-nav-link animsition-link" href="/news/news.html"><span>お知らせ</span><small>NEWS</small></a>
-              </li>
-              <li class="pc-nav-item">
-                <a class="pc-nav-link animsition-link"
-                  href="/recruit/recruit.html"><span>採用情報</span><small>RECRUIT</small></a>
-              </li>
-            </ul>
-            <div class="pc-contact">
-              <a class="pc-tel" href="tel:092-686-7954">0120-123-456</a>
-              <a class="pc-net" href="/contact/contact.html">お問い合わせフォーム</a>
-            </div>
-          </nav>
-        </div>
-        <!-- /.pc-container -->
-        <nav class="sp-navbtn">
-          <ul class="sp-navbtn__container">
-            <li>
-              <a class="tel" href="tel:092-686-7954"><span>電話予約</span> </a>
-            </li>
-            <li>
-              <a class="net" target="_blank" href="https://beauty.hotpepper.jp/">
-                <span>オンライン予約</span></a>
-            </li>
-          </ul>
-        </nav>
-        <!-- /.nav-btn -->
-      </header>
-      <!-- /.header -->
+      <?php get_template_part('includes/c-header'); ?>
       <section class="c-topview">
         <div class="c-topview__img">
-          <img class="view-sp" src="/images/home/shoose_1.jpg" alt="">
-          <img class="view-pc" src="/images/home/shoose_1.jpg" alt="">
+          <img class="view-sp" src="<?php echo get_template_directory_uri(); ?>/images/home/shoose_1.jpg" alt="">
+          <img class="view-pc" src="<?php echo get_template_directory_uri(); ?>/images/home/shoose_1.jpg" alt="">
         </div>
       </section>
       <!-- /.c-topview -->
@@ -117,7 +46,7 @@
         <ul>
           <li class="c-points__item">
             <div class="c-points__img">
-              <img src="/images/home/top_3@pc.jpg" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/home/top_3@pc.jpg" alt="">
             </div>
             <div class="c-points__desc">
               <h4>
@@ -134,7 +63,7 @@
           </li>
           <li class="c-points__item">
             <div class="c-points__img">
-              <img src="/images/home/dumbbell_1.jpg" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/home/dumbbell_1.jpg" alt="">
             </div>
             <div class="c-points__desc">
               <h4>
@@ -154,7 +83,7 @@
           </li>
           <li class="c-points__item">
             <div class="c-points__img">
-              <img src="/images/home/counseling_1.jpg" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/home/counseling_1.jpg" alt="">
             </div>
             <div class="c-points__desc">
               <h4>
@@ -172,7 +101,7 @@
           </li>
           <li class="c-points__item">
             <div class="c-points__img">
-              <img src="/images/home/stomach_1.jpg" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/home/stomach_1.jpg" alt="">
             </div>
             <div class="c-points__desc">
               <h4>
@@ -205,14 +134,14 @@
           <section id="flow01" class="c-flow-item">
             <div class="c-container">
               <div class="item-img view-pc">
-                <img src="/images/home/calender.jpg" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/home/calender.jpg" alt="">
               </div>
               <div class="item-wrap">
                 <h4 class="item-tit">
                   <p><span class="num">01</span>ご予約</p>
                 </h4>
                 <div class="item-img view-sp">
-                  <img src="/images/home/calender.jpg" alt="">
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/home/calender.jpg" alt="">
                 </div>
                 <div class="item-desc">
                   <p class="c-txt-sm">RivRoundでは、ご予約優先制となっております。まずはお電話、もしくはオンライン予約から無料体験のご予約をお願い致します。</p>
@@ -223,14 +152,14 @@
           <section id="flow02" class="c-flow-item">
             <div class="c-container">
               <div class="item-img view-pc">
-                <img src="/images/home/counseling_1@pc.jpg" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/home/counseling_1@pc.jpg" alt="">
               </div>
               <div class="item-wrap">
                 <h4 class="item-tit">
                   <p><span class="num">02</span>ヒアリング</p>
                 </h4>
                 <div class="item-img view-sp">
-                  <img src="/images/home/counseling_1@pc.jpg" alt="">
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/home/counseling_1@pc.jpg" alt="">
                 </div>
                 <div class="item-desc">
                   <p class="c-txt-sm">
@@ -243,14 +172,14 @@
           <section id="flow03" class="c-flow-item">
             <div class="c-container">
               <div class="item-img view-pc">
-                <img src="/images/home/machine_1.jpg" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/home/machine_1.jpg" alt="">
               </div>
               <div class="item-wrap">
                 <h4 class="item-tit">
                   <p><span class="num">03</span>着替え</p>
                 </h4>
                 <div class="item-img view-sp">
-                  <img src="/images/home/machine_1.jpg" alt="">
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/home/machine_1.jpg" alt="">
                 </div>
                 <div class="item-desc">
                   <p class="c-txt-sm">
@@ -263,14 +192,14 @@
           <section id="flow04" class="c-flow-item">
             <div class="c-container">
               <div class="item-img view-pc">
-                <img src="/images/home/sholder_3.jpg" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/home/sholder_3.jpg" alt="">
               </div>
               <div class="item-wrap">
                 <h4 class="item-tit">
                   <p><span class="num">04</span>トレーニング体験</p>
                 </h4>
                 <div class="item-img view-sp">
-                  <img src="/images/home/sholder_3.jpg" alt="">
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/home/sholder_3.jpg" alt="">
                 </div>
                 <div class="item-desc">
                   <p class="c-txt-sm">
@@ -282,14 +211,14 @@
           <section id="flow05" class="c-flow-item">
             <div class="c-container">
               <div class="item-img view-pc">
-                <img src="/images/home/feedback.jpg" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/home/feedback.jpg" alt="">
               </div>
               <div class="item-wrap">
                 <h4 class="item-tit">
                   <p><span class="num">05</span>フィードバック</p>
                 </h4>
                 <div class="item-img view-sp">
-                  <img src="/images/home/feedback.jpg" alt="">
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/home/feedback.jpg" alt="">
                 </div>
                 <div class="item-desc">
                   <p class="c-txt-sm">トレーニング後にトレーニングの結果をフィードバックします。また、今後のトレーニング予定やご自身で行うトレーニングなどもお伝えします。</p>
@@ -299,7 +228,7 @@
           </section>
         </div>
         <div class="more-btn item">
-          <a href="/faq/faq.html" class="more-btn__link slide-bg animsition-link">
+          <a href="<?php echo esc_url( home_url('/faq')); ?>" class="more-btn__link slide-bg animsition-link">
             <span class="c-txt-sm">よくあるご質問</span>
             <span class="bg"></span></a>
         </div>
@@ -307,76 +236,8 @@
       <!-- /.c-flow -->
     </main>
     <!-- /#main-contents -->
-    <footer class="p-footer">
-      <div class="c-container">
-        <div class="p-footer__wrap">
-          <div class="p-footer__logo">
-            <img src="/images/common/riv_logo_official2.png" alt="" />
-          </div>
-          <div class="p-footer__nav">
-            <ul>
-              <li>
-                <a class="animsition-link" href="/"><span class="c-txt-sm">ホーム</span></a>
-              </li>
-              <li>
-                <a class="animsition-link" href="/about/about.html"><span class="c-txt-sm">RivRoundについて</span></a>
-              </li>
-              <li>
-                <a class="animsition-link" href="/method/method.html"><span class="c-txt-sm">トレーニングメソッド</span></a>
-              </li>
-              <li>
-                <a class="animsition-link" href="/trainers/trainers.html"><span class="c-txt-sm">トレーナー紹介</span></a>
-              </li>
+    <?php get_footer(); ?>
 
-              <li>
-                <a class="animsition-link" href="/faq/faq.html"><span class="c-txt-sm">よくあるご質問</span></a>
-              </li>
-              <li>
-                <a class="animsition-link " href="/news/news.html"><span class="c-txt-sm">お知らせ</span></a>
-              </li>
-              <li>
-                <a class="animsition-link" href="/recruit/recruit.html"><span class="c-txt-sm">採用情報</span></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="copyright">&copy;2021 RivRound</div>
-      </div>
-    </footer>
-    <!-- /.footer -->
-    <div class="mobile-menu">
-      <nav class="mobile-menu__nav">
-        <ul class="mobile-menu__list">
-          <li class="mobile-menu__item"><a class="animsition-link" href="/">ホーム</a></li>
-          <li class="mobile-menu__item"><a class="animsition-link" href="/about/about.html">RivRoundについて</a></li>
-          <li class="mobile-menu__item"><a class="animsition-link" href="/method/method.html">トレーニングメソッド</a></li>
-          <li class="mobile-menu__item"><a class="animsition-link" href="/trainers/trainers.html">トレーナー紹介</a></li>
-          <li class="mobile-menu__item"><a class="animsition-link" href="/faq/faq.html">よくあるご質問</a></li>
-          <li class="mobile-menu__item"><a class="animsition-link" href="/news/news.html">お知らせ</a></li>
-          <li class="mobile-menu__item"><a class="animsition-link" href="/recruit/recruit.html">採用情報</a></li>
-        </ul>
-        <div class="contact-btn">
-          <ul class="contact-btn-list">
-            <li class="contact-btn-item">
-              <a href="tel:05031599527">
-                <span class="tel">お問い合わせ</span>
-              </a>
-            </li>
-            <li class="contact-btn-item">
-              <a href="mailto:info@riv-round.com">
-                <span class="mail">お問い合わせ</span>
-              </a>
-            </li>
-            <li class="contact-btn-item">
-              <a href="https://www.instagram.com/?hl=ja" target="_blank">
-                <span class="insta">インスタグラム</span>
-              </a>
-            </li>
-        </div>
-        </ul>
-      </nav>
-    </div>
-    <!-- /.mobile-menu -->
   </div>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>

@@ -8,7 +8,7 @@
   }
 
   & .logo {
-    background-image: url(/images/common/riv_logo_official2.png);
+    background-image: url(../images/common/riv_logo_official2.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -17,7 +17,7 @@
     opacity: 1;
 
     &.inview {
-      background-image: url(/images/common/riv_logo_02.png);
+      background-image: url(../images/common/riv_logo_02.png);
     }
   }
 
@@ -88,7 +88,7 @@
               left: 0;
               bottom: 0;
               margin: auto;
-              background-image: url(/images/common/icon-tel.png);
+              background-image: url(../images/common/icon-tel.png);
               background-position: center;
               background-repeat: no-repeat;
               background-size: contain;
@@ -113,7 +113,7 @@
               left: 0;
               bottom: 0;
               margin: auto;
-              background-image: url(/images/common/icon-link-1-black.png);
+              background-image: url(../images/common/icon-link-1-black.png);
               background-position: center;
               background-repeat: no-repeat;
               background-size: contain;
@@ -217,7 +217,7 @@
             content: '';
             height: 18px;
             width: 18px;
-            background-image: url(/images/common/tel-white.png);
+            background-image: url(../images/common/tel-white.png);
             background-size: contain;
             background-repeat: no-repeat;
           }
@@ -233,7 +233,7 @@
             content: '';
             height: 18px;
             width: 18px;
-            background-image: url(/images/common/icon-link-1-white.png);
+            background-image: url(../images/common/icon-link-1-white.png);
             background-size: contain;
             background-repeat: no-repeat;
           }
@@ -340,19 +340,19 @@
 
       & .tel {
         &::before {
-          background-image: url(/images/common/tel-white.png);
+          background-image: url(../images/common/tel-white.png);
         }
       }
 
       & .mail {
         &::before {
-          background-image: url(/images/common/ico-mail-wh.png);
+          background-image: url(../images/common/ico-mail-wh.png);
         }
       }
 
       & .insta {
         &::before {
-          background-image: url(/images/common/icon-insta-white.png);
+          background-image: url(../images/common/icon-insta-white.png);
         }
       }
     }
