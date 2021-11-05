@@ -28,7 +28,7 @@
               </div>
             </div>
           </div>
-          <div class="hero__text">
+          <div class="hero__text clip-js1 left">
             <h2>毎日でも<br>通いたくなる場所</h2>
           </div>
           <div class="scrolldown">scroll
