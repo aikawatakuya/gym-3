@@ -22,6 +22,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const loadAnimation = document.querySelectorAll('.clip-js1');
     loadAnimation.forEach(function (element) {
       element.classList.add("reveal");
-    }, 1500)
-  });
+    })
+  }, 3000);
 });
