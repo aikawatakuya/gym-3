@@ -27,7 +27,7 @@
     <?php get_footer(); ?>
     <!-- /.footer -->
   </div>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/scripts/typing.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/scripts/main.js"></script>
 </body>

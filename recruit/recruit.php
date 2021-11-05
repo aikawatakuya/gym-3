@@ -144,8 +144,7 @@
     <?php get_footer(); ?>
 
   </div>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script src="<?php echo get_template_directory_uri(); ?>/scripts/vendor/animsition.min.js"></script>
   <script src="<?php echo get_template_directory_uri(); ?>/scripts/libs/page.js"></script>
   <script src="<?php echo get_template_directory_uri(); ?>/scripts/libs/mobile-menu.js"></script>
